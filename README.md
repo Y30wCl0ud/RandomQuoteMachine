@@ -1,0 +1,2 @@
+# RandomQuoteMachine
+quote, machine, random
