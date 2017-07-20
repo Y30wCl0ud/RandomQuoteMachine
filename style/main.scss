@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    // height: 40%;
+    height: 20em;
+    max-height: 20em;
+    // width: 60%;
+    width: 36em;
+    max-width: 36em;
+    border: 1px solid grey;
+}
+
+.topl-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 3em;
+    // border: 3px solid #000;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+.bottomr-border {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1em;
+    width: 3em;
+    // border: 3px solid #000; 
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;   
+}
