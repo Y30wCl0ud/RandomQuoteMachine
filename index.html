@@ -4,29 +4,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/06ec73c07d.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Yesteryear" rel="stylesheet">
 	<link rel="stylesheet" href="./style/main.css">
 	<title>Random Quote Machine </title>
 </head>
 
 <body>
-	<h1>Random Quotes On Design</h1>
-
 	<section class="card">
-		<div class="topl-border"></div>
+		<!-- <div class="topl-border"></div> -->
+
 		<section>
-			<p id="quote">"The quote"</p>
-			<p id="author">"Writer of dude/madam who said it"</p>
+			<div class="quote-con">
+				<i class="fa fa-quote-left"></i>
+				<p id="quote"></p>
+			</div>
+
+			<div class="author-con">
+				<button id="getMoreBtn" type="">Get Quote</button>
+				<p id="author"></p>
+			</div>
 		</section>
-		<div class="bottomr-border"></div>
+
+		<!-- <div class="bottomr-border"></div> -->
 	</section>
 
-	<div>
-		<button id="getMoreBtn" type="">Get Quote</button>
-	</div>
 
 	<div class="social-btn-con">
-		<button type="">twitter</button>
+		<button type="button">twitter</button>
 		<p>social medium sharing buttons on the bottom</p>
 		<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
 		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world">Pre populated</a>
