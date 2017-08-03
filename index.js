@@ -11,7 +11,7 @@ let setContent = data => {
 	let tagless = data.content.replace(/(<[/]*\w+>)/g, '');
 	theQuote.innerHTML = data.content;
 	qAuthor.innerHTML = data.title;
-	twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURI(tagless)}}`;
+	twitterBtn.href = `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${encodeURI(tagless)}}`;
 }
 
 // bypass for bypassing cache
