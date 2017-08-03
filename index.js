@@ -3,11 +3,15 @@
 let fetchButton = document.querySelector('#getMoreBtn');
 let theQuote = document.querySelector('#quote');
 let qAuthor = document.querySelector('#author');
+let twitterBtn = document.querySelector('.twitter-btn a');
 let url = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1';
 
+
 let setContent = data => {
+	let tagless = data.content.replace(/(<[/]*\w+>)/g, '');
 	theQuote.innerHTML = data.content;
 	qAuthor.innerHTML = data.title;
+	twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURI(tagless)}}`;
 }
 
 // bypass for bypassing cache

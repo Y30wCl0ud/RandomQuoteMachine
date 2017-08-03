@@ -5,7 +5,7 @@ Contains two examples of ajax:
 - fetch Api (default)
 - XMLHttpRequest
 
-[Live demo on codepen](https://codepen.io/Y30wCl0ud/pen/MoNeYG)
+[Live demo on codepen](https://codepen.io/Y30wCl0ud/full/MoNeYG)
 
 **Enable CORS when running local (chrome) to use the API.**
 
