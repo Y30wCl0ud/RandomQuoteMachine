@@ -10,8 +10,7 @@ let setContent = data => {
 	qAuthor.innerHTML = data.title;
 }
 
-// Bypass for bypassing cache of XMLHttpRequest
-// Fetch is using it too because codepen doesn't allow the use of cache-control
+// bypass for bypassing cache
 let bypass;
 
 /* Using fetch API */
@@ -19,11 +18,6 @@ let getQuote = () => {
 	bypass = ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime();
 	fetch(url + bypass, {
 		method: 'GET',
-		headers: {
-			// 'pragema': 'no-cache',
-			// 'cache-control': 'no-cache',
-			// 'Access-Control-Allow-Headers': ['pragema', 'cache-control']  
-		}
 	})
 		.then(res => { console.log(); return res.json() })
 		.then(res => { console.log(); setContent(res[0]) })
@@ -58,5 +52,4 @@ let getQuote = () => {
 
 
 fetchButton.addEventListener('click', function () { getQuote() });
-// window.onload = getQuote();
 document.onload = getQuote();
